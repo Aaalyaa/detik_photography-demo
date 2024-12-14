@@ -1,0 +1,149 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000080;
+    font-family: Arial, sans-serif;
+}
+
+.login-container {
+    background: linear-gradient(145deg, #1a1a8a, #1a1a8a);
+    border-radius: 20px;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.logo-container {
+    display: inline-block ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    background-color: #000080;
+    border-radius: 20px;
+    padding: 10px;
+    width: 120px;
+}
+
+.logo-container img {
+    width: 120px; 
+    height: auto;
+}
+
+.login-container .avatar {
+    background-color: #4d4dff;
+    width: 11%;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 0 auto 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container .avatar i {
+    font-size: 50px;
+    color: white;
+}
+
+.login-container h2{
+    color: white;
+}
+
+.login-container input[type="text"], 
+.login-container input[type="password"] {
+    width: 89%;
+    padding: 15px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #e6e6ff;
+    font-size: 16px;
+}
+
+.login-container .input-container {
+    position: relative;
+}
+
+.login-container .input-container i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6666ff;
+}
+
+.login-container .input-container input {
+    padding-left: 40px;
+}
+
+.login-container .login-as {
+    text-align: left;
+    margin: 10px 0;
+    color: white;
+}
+
+.login-container .login-as select {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e6e6ff;
+    font-size: 16px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4d4dff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px 0;
+}
+
+.login-container .options {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    color: white;
+}
+
+.login-container .options a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-container .create-account {
+    color: white;
+    margin-top: 10px;
+}
+
+.login-container .create-account a {
+    color: #4d4dff;
+    text-decoration: none;
+}
+
+/* Pseudo-class focus */
+.login-container input[type="text"]:focus, 
+.login-container input[type="password"]:focus,
+.login-container select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
+
+/* Style for the success message */
+.success-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 24px;
+    color: #4d4dff;
+}

@@ -1,0 +1,189 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a8a;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    background-color: #9b9bdd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.left-side, .right-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.left-side img {
+    display: inline-block ;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    background-color: #000080;
+    padding: 10px;
+    border-radius: 40px;
+    width: 70px; 
+    height: auto;
+}
+
+.input-pemesanan-btn, .lihat-transaksi-btn {
+    background-color: #000080;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-pemesanan-btn:hover, .lihat-transaksi-btn:hover {
+    background-color: #1818cf;
+}
+
+.right-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #4d4dff;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.right-buttons button:hover {
+    background-color: rgba(0, 0, 255, 0.5);
+    transform: scale(1.05);
+}
+
+.right-buttons span {
+    margin-right: 5px; 
+}
+
+#nama-kasir {
+    color: #ffffff;
+    background-color: #000080;
+    padding: 8px 12px; 
+    border-radius: 3px; 
+}
+
+.container-2 {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header {
+    background-color: #f1c40f;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.header input[type="date"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+.header button[type="submit"] {
+    padding: 8px 15px;
+    background-color: #28a745; /* Hijau untuk tombol filter */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.header .reset-btn {
+    padding: 8px 15px;
+    background-color: #dc3545;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.header .reset-btn:hover {
+    background-color: #c82333;
+}
+.header form * {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .header form {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .header input[type="date"],
+    .header button,
+    .header .reset-btn {
+        width: 100%;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th {
+    background-color: #f1c40f;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+.action-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}

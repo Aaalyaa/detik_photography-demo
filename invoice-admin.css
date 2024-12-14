@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #011175;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #5D7EA7;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+}
+
+.logout-btn {
+    width: 40%;
+    background-color: #5494f3;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    background-color: #011175;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.admin-text {
+    margin-top: 20px;
+}
+
+.admin-name {
+    background-color: white;
+    border: none;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.sidebar-menu {
+    flex-grow: 1; 
+    margin-top: 20px;
+}
+
+.sidebar-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 15px; 
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-menu a:hover {
+    background-color: #4D68A3;
+}
+
+.main-content {
+    width: 80%; 
+    margin-left: 20%; 
+    padding: 20px;
+    background-color: #011175;
+    color: white;
+    overflow-y: auto;
+    height: 100vh; 
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    float: left;
+    margin-right: 20px;
+    width: 80px; 
+    height: auto;
+    background-color: #5D7EA7;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.today {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.date-box, .time-box {
+    padding: 10px;
+    background-color: #5D7EA7;
+    border-radius: 5px;
+}
+
+.invoice-container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-header {
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.invoice-header h1 {
+    color: #007bff;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.invoice-header h2 {
+    color: #ff4444;
+    font-size: 1.5rem;
+    margin: 5px 0;
+}
+
+.cashier-name {
+    color: black;
+    text-align: right;
+    background-color: #e0e0e0;
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.invoice-info {
+    color: black;
+}
+
+.invoice-info p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
+.invoice-info span {
+    font-weight: bold;
+}
+
+.invoice-table table {
+    color: black;
+    table-layout: auto; 
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.invoice-table th,
+.invoice-table td {
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.invoice-table th {
+    background-color: #f4f4f4;
+}
+
+.invoice-table {
+    overflow-x: auto; 
+}
+
+.invoice-summary table {
+    color: black;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; 
+}
+
+.invoice-summary td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.payment-method {
+    color: black;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.payment-method span {
+    font-weight: bold;
+}
+
+.action-buttons {
+    text-align: center;
+}
+
+.action-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.action-buttons button:first-child {
+    background-color: #007bff;
+    color: white;
+}
+
+.action-buttons button:last-child {
+    background-color: #ff4800;
+    color: white;
+}

@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #011175;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #5D7EA7;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh; 
+    position: fixed; 
+    top: 0;
+    left: 0;
+}
+
+.logout-btn {
+    width: 40%;
+    background-color: #5494f3;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.profile-section {
+    text-align: center;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    background-color: #011175;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.admin-text {
+    margin-top: 20px;
+}
+
+.admin-name {
+    background-color: white;
+    border: none;
+    padding: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.sidebar-menu {
+    flex-grow: 1; 
+    margin-top: 20px;
+}
+
+.sidebar-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 15px; 
+}
+
+.sidebar-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.sidebar-menu a:hover {
+    background-color: #4D68A3;
+}
+
+.main-content {
+    width: 80%; 
+    margin-left: 20%; 
+    padding: 20px;
+    background-color: #011175;
+    color: white;
+    overflow-y: auto;
+    height: 100vh; 
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    float: left;
+    margin-right: 20px;
+    width: 80px; 
+    height: auto;
+    background-color: #5D7EA7;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.today {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+.date-box, .time-box {
+    padding: 10px;
+    background-color: #5D7EA7;
+    border-radius: 5px;
+}
+
+.container-2 {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header-2 {
+    background-color: #f1c40f;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    gap: 20px;
+}
+.header-2 input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+.header-2 button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
+.header-2 form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header-2 input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s;
+}
+.header-2 input[type="date"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+.header-2 button[type="submit"] {
+    padding: 8px 15px;
+    background-color: #28a745; /* Hijau untuk tombol filter */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.header-2 button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.header-2 .reset-btn {
+    padding: 8px 15px;
+    background-color: #dc3545;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.header-2 .reset-btn:hover {
+    background-color: #c82333;
+}
+.header-2 form * {
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .header-2 form {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .header-2 input[type="date"],
+    .header-2 button,
+    .header-2 .reset-btn {
+        width: 100%;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    color: black;
+}
+th {
+    background-color: #f1c40f;
+}
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+.action-button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}

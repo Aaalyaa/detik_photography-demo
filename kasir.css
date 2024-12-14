@@ -1,0 +1,232 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a8a;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 10px;
+    background-color: #9b9bdd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header, .client-info, .summary, .actions, .final-button {
+    margin-bottom: 20px;
+}
+
+.client-info input, .client-info span, .client-info select, .client-info button,
+.summary input, .summary select, .summary button, .summary span {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.header input, .client-info input, .client-info select, .actions input {
+    width: calc(50% - 10px);
+    padding: 10px;
+    background-color: #edf2fb;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.header input:focus, .client-info select:focus, .client-info input:focus, .actions input:focus, .summary input:focus, .summary select:focus {
+    border-color: #ffffff;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.header div {
+    display: flex;
+    align-items: center;
+}
+
+.header span {
+    width: 100px;
+    text-align: left;
+    padding-right: 10px;
+}
+
+.header input {
+    padding: 10px;
+    background-color: #edf2fb;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.header input:focus {
+    border-color: #ffffff;
+}
+
+.items-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.items-table th, .items-table td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.items-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.items-table th {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    background-color: #161627;
+    color: white;
+}
+
+.items-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.items-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.actions button, .final-button button, .summary button, .client-info button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.actions button:hover, .client-info button:hover, .summary button:hover, .final-button button:hover {
+    transform: scale(1.05);
+}
+
+.actions .save, .summary .save, .final-button .save {
+    background-color: #4857be;
+    color: white;
+}
+
+.actions .delete-all, .final-button .delete-all {
+    background-color: #3c3e47;
+    color: white;
+}
+
+.summary span {
+    margin-right: 10px;
+}
+
+.summary input, .summary select {
+    margin-left: 5px;
+    padding: 10px;
+    background-color: #edf2fb;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+}
+
+.summary input:focus, .summary select:focus {
+    border-color: #ffffff;
+}
+
+.client-info .save{
+    background-color: #4857be;
+    color: white;
+}
+
+.client-info .cancel{
+    background-color: #334173;
+    color: white;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.left-side, .right-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.left-side img {
+    display: inline-block ;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    background-color: #000080;
+    padding: 10px;
+    border-radius: 40px;
+    width: 70px; 
+    height: auto;
+}
+
+.input-pemesanan-btn, .lihat-transaksi-btn {
+    background-color: #000080;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.input-pemesanan-btn:hover, .lihat-transaksi-btn:hover {
+    background-color: #1818cf;
+}
+
+.right-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: #4d4dff;
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.right-buttons button:hover {
+    background-color: rgba(0, 0, 255, 0.5);
+    transform: scale(1.05);
+}
+
+.right-buttons span {
+    margin-right: 5px; 
+}
+
+#nama-kasir {
+    color: #ffffff;
+    background-color: #000080;
+    padding: 8px 12px; 
+    border-radius: 3px; 
+}
+
+.client-info input, .client-info select, .actions input {
+    width: calc(27% - 18px);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.client-info input:focus, .actions input:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.client-info button, .actions button {
+    margin-top: 10px;
+}
